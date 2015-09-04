@@ -3,13 +3,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System;
+using System.ServiceModel;
 using System.ServiceModel.Channels;
 
 namespace ServiceModel
 {
     internal abstract class Class1
     {
- 
         protected readonly Guid _identity = Guid.NewGuid();
         private readonly Socket _socket;
         protected readonly BufferManager BufferManager;
